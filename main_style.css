@@ -1,0 +1,16 @@
+*
+{
+ background-color: rgb(152, 152, 152);
+}
+
+#textoInicial
+{
+ text-align: center;
+ padding: 60px;
+ padding-top: 20px;
+}
+
+figcaption
+{
+ text-align: center;
+}
