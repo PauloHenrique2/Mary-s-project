@@ -9,43 +9,33 @@
     <title>Aparições Marianas</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary cabecario">
         <div class="container-fluid">
           <figure>
-            <img src = "images/medalha_milagrosa-sem_fundo.png" width="170px" height="100px">
+            <img src = "images/medalha_milagrosa-sem_fundo.png" width="170px" height="100px" alt = "Medalha Milagrosa">
             <figcaption>Aparições Marianas</figcaption>
           </figure>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <div class="navBarItens">
               <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              <a class="nav-link" href="aparicoes.html">Lista das Aparições</a>
             </div>
           </div>
         </div>
       </nav>
 
       <div id="textoInicial">
-        <h3>Lista das aparições</h3>
-        <h4>Portugal</h4>
-        <p id="Portugal"></p>
-        <!--
-        <script>
-          "Aparicoes":[
-           {"País":"Portugal", "Cidade":"Fátima","Ano":"1917","Descrição":"Em Fátima, Nossa Senhora aparece a três pastorinhos durante 5 meses no dia 13 de cada mês."},
-           {}
-          ]
+        <h3 class="listAparicoes">Lista das Aparições</h3>
+        <div id="aparicoesLista">
+          <img src="images/nossaSenhora.jpg" alt="" class="imgNossaSenhora">
   
-  let text = '"{Aparicoes"[' +
-    '{"Pais":"Portugal", "Cidade":"Fátima","Ano":"1917","Descricao":"Em Fátima, Nossa Senhora aparece a três pastorinhos durante 5 meses no dia 13 de cada mês."}'+
-  ']}';
-  
-  const obj = JSON.parse(text)
-          document.getElementById("Portugal").innerHTML = obj.Aparicoes[1].Pais + " " + obj.Aparicoes[1].Cidade + " " + obj.Aparicoes[1].Ano + " " + obj.Aparicoes[1].Descricao;
-        </script>
-        -->
-        
+        </div>
       </div>
+  
+    <script src="aparicoes.js"></script>
 </body>
 </html>
