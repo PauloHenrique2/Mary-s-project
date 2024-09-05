@@ -16,6 +16,7 @@ fetch('aparicoes.json')
           <h5>Ano: ${aparicao.Ano}</h5>
           <p>${aparicao.Descricao}</p>
           <p><b>Detalhes:</b> ${aparicao.Detalhes}</p>
+          <img src='${aparicao.Imagem_aparicao}' width='300px' height='400px'">
         `;
         }
     })
