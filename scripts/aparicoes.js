@@ -28,16 +28,24 @@ document.addEventListener('DOMContentLoaded', function() {
             card.href = `detalhes.html?id=${aparição.id}`;
             card.classList.add('card');
             card.innerHTML = `
-              <div class="card-body">
-              <div class="paiTitle">
-                <div class="center-center">
-                      <h5 class="card-title">${aparição.Cidade}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">${aparição.Ano}</h6>
-                </div>
-              </div>
-                <p class="card-text">${aparição.Descricao}</p>
-              </div>
-            `;
+                  <div class="card-body">
+                    <div class="card-body-left">
+                      <div>
+                        <p class="nomeAparicao">${aparição.Nome}</p>
+                        <img src='${aparição.Imagem_aparicao}' class="imgPrincipalCards">
+                      </div>
+                    </div>
+                    <div class="card-body-right">
+                      <div class="paiTitle">
+                        <div class="center-center" style="flex-direction: column!important; gap: 1.4vh">
+                            <h5 class="card-title">${aparição.Cidade}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">${aparição.Ano}</h6>
+                        </div>
+                      </div>
+                      <p class="card-text">${aparição.Descricao}</p>
+                    </div>
+                  </div>
+                `;
             section.appendChild(card);
           });
 
@@ -46,3 +54,12 @@ document.addEventListener('DOMContentLoaded', function() {
       })
       .catch(error => console.error('Erro ao carregar dados:', error));
   });
+
+  let timer;
+    document.getElementById('search-input').addEventListener('input', (e) => {
+        const digitado = e.target.value;
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+            console.log(digitado)
+        }, 500);
+    });
