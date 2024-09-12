@@ -24,39 +24,17 @@
     },
     {
       "id": 3,
-      "Pais": "Portugal",
-      "Cidade": "Lamego",
-      "Ano": "1396",
-      "Nome": "Nossa Senhora dos Remédios",
-      "Descricao": "Em Lamego, Nossa Senhora aparece a um pastor em uma colina.",
-      "Detalhes": "-",
-      "Imagem_aparicao": "",
-      "oracao": ""
-    },
-    {
-      "id": 4,
-      "Pais": "Portugal",
-      "Cidade": "Santarém",
-      "Ano": "1240",
-      "Nome": "Nossa Senhora da Graça",
-      "Descricao": "Em Santarém, Nossa Senhora aparece a uma mulher em uma igreja.",
-      "Detalhes": "-",
-      "Imagem_aparicao": "",
-      "oracao": ""
-    },
-    {
-      "id": 5,
       "Pais": "França",
       "Cidade": "Lourdes",
       "Ano": "1858",
       "Nome": "Nossa Senhora de Lourdes",
       "Descricao": "Em Lourdes, Nossa Senhora aparece a Bernadette Soubirous em uma gruta durante 18 aparições.",
       "Detalhes": "-",
-      "Imagem_aparicao": "",
-      "oracao": ""
+      "Imagem_aparicao": "images/nossa_Senhora_Lourdes.png",
+      "oracao": "“Sob a Tua proteção procuramos refúgio, Virgem Imaculada de Lourdes, que és o modelo perfeito da criação segundo o plano original de Deus. <br> A Ti, neste dia, confiamos os doentes, os idosos, as pessoas sozinhas: alivia o seu sofrimento, enxuga as suas lágrimas e obtém para cada um a força necessária para realizar a vontade de Deus. Sê o amparo de todos que aliviam, dia após dia, os sofrimentos destes irmãos. <br> E ajuda-nos a crescer no conhecimento de Cristo, que, com a Sua morte e ressurreição, venceu o poder do mal e da morte.”<br> <b>Nossa Senhora de Lourdes, rogai por nós.</b>"
     },
     {
-      "id": 6,
+      "id": 4,
       "Pais": "França",
       "Cidade": "La Salette",
       "Ano": "1846",
@@ -67,18 +45,7 @@
       "oracao": ""
     },
     {
-      "id": 7,
-      "Pais": "França",
-      "Cidade": "Paray-le-Monial",
-      "Ano": "1673",
-      "Nome": "Santa Margarida Maria Alacoque",
-      "Descricao": "Em Paray-le-Monial, Nossa Senhora aparece a Santa Margarida Maria Alacoque.",
-      "Detalhes": "-",
-      "Imagem_aparicao": "",
-      "oracao": ""
-    },
-    {
-      "id": 8,
+      "id": 5,
       "Pais": "México",
       "Cidade": "Guadalupe",
       "Ano": "1531",
@@ -89,7 +56,7 @@
       "oracao": ""
     },
     {
-      "id": 9,
+      "id": 6,
       "Pais": "Brasil",
       "Cidade": "Aparecida",
       "Ano": "1717",
