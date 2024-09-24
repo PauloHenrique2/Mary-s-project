@@ -79,7 +79,7 @@
     },
     {
       "id": 8,
-      "Pais": " Polônia",
+      "Pais": "Polônia",
       "Cidade": "Leżajsk",
       "Ano": "1860",
       "Nome": "Nossa Senhora da Consolação de Leżajsk",
@@ -87,6 +87,17 @@
       "Detalhes": "<br>À caminho para consertar o moinho, Rycht foi buscar madeira na floresta e, nesse caminho, a Virgem Maria apareceu a ele. Após o acontecido, ele voltou à cidade e contou a todos, porém ninguém acreditava em suas palavras. Uma razão para isso foram as heresias protestantes da época, que desprezavam Maria, assim, o acontecimento foi julgado como “fora da moda“. <br> Acontece que, em 1578 no mesmo local, como que para confirmar a primeira aparição, Nossa Senhora aparece três vezes para um lenhador da mesma cidade de Lezajsk, chamado Tomás Michalkow, grande devoto da Virgem Maria, e costumava rezar enquanto estava na floresta. Um dia, enquanto ele rezava na floresta, observou uma luz brilhante, na qual a Santíssima Virgem apareceu, dizendo a ele: “Thomas, eu escolhi este lugar. Aqui meu Filho será amado e respeitado e quem invocar minha intercessão receberá minha bênção“. Dessa maneira, Maria pede a ele a construção de uma igreja, pedindo que ele alertasse as autoridades. Após isso, Nossa Senhora aparece novamente a ele, pedindo para que quebrasse o silêncio, pedindo às autoridades a construção da igreja. Muitas tentativas depois, Tomás conseguiu convencer os vereadores da cidade para colocar uma imagem de Nosso Senhor, durante a Semana Santa, no local das aparições. <br><h6>Construção de uma capela</h6> Em 1598, através da conversão de um protestante, que foi atingido por uma paralisia e curado milagrosamente, chamado Kasper Gluchowski, uma capela de madeira com um quadro milagroso de Nossa Senhora, foi construída no local das aparições. Após a construção, o local foi visitado por inúmeros fiéis, atraídos pelos milagres que ali aconteciam. Além disso, foram construídos uma igreja e um convento no local.",
       "Imagem_aparicao": "images/nossa_Senhora_da_Consolacao.jpg",
       "oracao": "Vós sois no céu a Rainha dos Anjos e dos Santos,<br>mas aqui na terra é a Mãe das consolações.<br>Vós sois a Consolação e eu, vosso (a) filho (a),<br>vos peço, portanto, consolação e a graça... (pedir a graça).<br>Mãe querida, vós sabeis o modo,<br>conheceis o caminho para ouvir-me,<br>por isso confio em vós!<br>Dizei uma palavra a Jesus que trazeis em vossos braços<br>com tanto amor e carinho,<br>e será o suficiente para que eu<br>prove a alegria do conforto.<br>Consolado (a) por vós e pelo vosso Filho,<br>serei capaz de consolar os meus irmãos<br>que mais sofrem.<br>Saberei também enfrentar<br>com serenidade as dificuldades,<br>encontrando em vós auxílio e proteção.Amém.<br><b>Nossa Senhora da Consolação de Leżajsk, rogai por nós!</b>"
+    },
+    {
+      "id": 9,
+      "Pais":"Lituânia",
+      "Cidade":"Šiluva",
+      "Ano":"1608",
+      "Nome":"Nossa Senhora de Šiluva",
+      "Descricao":"Nossa Senhora aparece a jovens pastores",
+      "Detalhes":"<br>",
+      "Imagem_aparicao":"images/nossa_Senhora_de_Siluva.jpg",
+      "oracao":"“Comovidos com as tuas lágrimas, possamos nós, como os nossos antepassados, reavivar o espírito de adoração ao teu Filho em nossos corações, fortalecer a estrutura frágil do santuário que é a família, trazer de volta os teus filhos pecadores e perdoar os pecados da nossa nação. <br>Nossa Senhora de Šiluva, intercede pelos vossos filhos pecadores. Traga-os para casa, de volta para Jesus”.<br><b>Nossa Senhora de Šiluva, rogai por nós!</b>"
     }
   ]
 }
