@@ -13,7 +13,7 @@ fetch('/json/aparicoes.json')
             const detalhesAparicao = document.getElementById('detalhesAparicao');
             detalhesAparicao.innerHTML = `
           <h4>${aparicao.Cidade}, ${aparicao.Pais}</h4>
-          <h5>Ano: ${aparicao.Ano}</h5>
+          <h4>Ano: ${aparicao.Ano}</h4>
           <p>${aparicao.Descricao}</p>
           <p><b>Detalhes:</b> ${aparicao.Detalhes}</p>
           <img src='${aparicao.Imagem_aparicao}' width='300px' height='400px'">
