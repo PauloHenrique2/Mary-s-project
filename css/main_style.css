@@ -4,6 +4,35 @@
  box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+    height: 8px; 
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 15px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #141413; 
+    height: 20px; 
+    border-radius: 20px; 
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+
+h5{
+    letter-spacing: 1.3px;
+    font-size: 28px!important;
+    font-weight: 700!important;
+    line-height: 10px;
+    color: black;
+}
+
 #textoInicial
 {
  text-align: center;
@@ -187,6 +216,30 @@ figcaption
     min-width: 134px;
 }
 
+.divPaiTexDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-top: 20px;
+}
+
+.textDetails{
+    width: 50%;
+    text-align: justify;
+    letter-spacing: 1.3px;
+    line-height: 26.5px;
+    font-size: 17px;
+    font-weight: 400;
+    text-shadow: 2px 0px 5px rgb(0 0 0 / 31%);
+    color: black;
+}
+
+@Media(max-width: 1000px){
+    .textDetails{
+        width: 80%;
+    }
+}
+
 @media (max-width: 991px) {
     .navBarItens {
         margin-top: 1.5vh;
@@ -202,6 +255,13 @@ figcaption
         min-width: 260px;
     }
 }
+
+@Media(max-width: 650px){
+    .textDetails{
+        width: 87.5%;
+    }
+}
+
 
 @Media(max-width: 410px){
     .input-container{
