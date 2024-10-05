@@ -1,16 +1,64 @@
-*
-{
+* {
     box-sizing: border-box;
 }
 
-header
-{
+header {
     background-color: rgb(152, 152, 152);
+    text-align: center;
+    padding: 20px 0;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+ul li:last-child {
+    margin-right: 0; 
+}
+
+h2 {
+    font-size: 2em;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.headerOptions{
+    color: transparent;
+    transition: all ease 0.5s;
+}
+
+.headerOptions h5{
+    transition: all ease 0.5s;
+}
+
+.headerOptions h5:hover{
+    transform: scale(1.08);
+}
+
+.leaflet-popup {
+    max-width: 300px;
+}
+
+.leaflet-popup-content {
     text-align: center;
 }
 
-ul li
-{
-    display: inline-block;
-    margin-right: 30px;
+.btnSaibaMais {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #070779;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all ease 0.5s;
+}
+
+.btnSaibaMais:hover {
+    background-color: #6002db;
+    color: yellow !important;
 }
