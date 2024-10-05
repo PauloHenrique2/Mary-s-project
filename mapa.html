@@ -21,62 +21,171 @@
     <header>
         <br>
         <ul style="list-style-type:none;">
-            <li><a href="index.html"><h5 style="text-decoration: underline; color: rgb(57, 57, 57);"><b>Início</b></h5></a></li>
-            <li><a href="aparicoes.html"><h5 style="text-decoration: underline; color: rgb(57, 57, 57);"><b>Lista das aparições</b></h5></a></li>
-            <li><a href="referencias.html"><h5 style="text-decoration: underline; color: rgb(57, 57, 57);"><b>Referências</b></h5></a></li>
+            <li><a href="index.html" class="headerOptions"><h5 style="color: rgb(24, 24, 24);"><b>Início</b></h5></a></li>
+            <li><a href="aparicoes.html" class="headerOptions"><h5 style="color: rgb(24, 24, 24);"><b>Lista das aparições</b></h5></a></li>
+            <li><a href="referencias.html" class="headerOptions"><h5 style="color: rgb(24, 24, 24);"><b>Referências</b></h5></a></li>
         </ul>
         <br>
-        <h5 style="text-align: center;">Mapa das apariçoes</h5>
+        <h2 style="text-align: center; color: rgb(20, 20, 20); font-weight: bold;">Mapa das aparições</h2>
         <br>
-        <p>Observe abaixo o mapa do mundo com os locais das aparições marcados e clique nos marcadores azuis para obter
-           mais informações sobre a aparição.
+        <p style="max-width: 800px; margin: 0 auto; text-align: center; color: rgb(70, 70, 70);">
+            Observe abaixo o mapa do mundo com os locais das aparições marcados e clique nos marcadores azuis para obter
+            mais informações sobre a aparição.
         </p>
         <br>
     </header>
-    <div id="map" style="height: 69vh;">
+    
+    <div id="map" style="height: 76vh;">
     </div>
 
-    <script>
-        let map = L.map("map").setView([37.61, -122.011], 10);
+        <script>
+            let map = L.map("map").setView([37.61, -122.011], 10);
 
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-            maxZoom: 20
-        }).addTo(map);
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+                maxZoom: 20
+            }).addTo(map);
 
-        let zaragoza = L.marker([41.65691789582794, -0.8784745815454716]).addTo(map);
-        let fatima = L.marker([39.63127532153284, -8.67315218237831]).addTo(map);
-        let paris = L.marker([48.8507837896766, 2.322977305335615]).addTo(map);
-        let lourdes = L.marker([43.097591421611256, -0.05870591965005861]).addTo(map);
-        let sallete = L.marker([44.858628447045405, 5.9788064683618805]).addTo(map);
-        let guadalupe = L.marker([19.486295968151012, -99.11516255158693]).addTo(map);
-        let roma = L.marker([41.9036323895654, 12.483507672900426]).addTo(map);
-        let lezajsk = L.marker([50.27051261458389, 22.408678702070706]).addTo(map);
-        let siluva = L.marker([55.53061539541645, 23.21991247309754]).addTo(map);
-        let laus = L.marker([44.52122093284419, 6.152105467908496]).addTo(map);
-        let filipov = L.marker([50.81140894824067, 14.397622437454045]).addTo(map);
-        let pontmain = L.marker([48.43959793253507, -1.0591001100132138]).addTo(map);
-        let gietrzwald = L.marker([53.74804270191199, 20.23549536565065]).addTo(map);
-        let knock = L.marker([53.7920679235046, -8.91752977714699]).addTo(map);
-        let sprimont = L.marker([50.54089244870204, 5.73888739060881]).addTo(map);
+            let zaragoza = L.marker([41.65691789582794, -0.8784745815454716]).addTo(map);
+let fatima = L.marker([39.63127532153284, -8.67315218237831]).addTo(map);
+let paris = L.marker([48.8507837896766, 2.322977305335615]).addTo(map);
+let lourdes = L.marker([43.097591421611256, -0.05870591965005861]).addTo(map);
+let sallete = L.marker([44.858628447045405, 5.9788064683618805]).addTo(map);
+let guadalupe = L.marker([19.486295968151012, -99.11516255158693]).addTo(map);
+let roma = L.marker([41.9036323895654, 12.483507672900426]).addTo(map);
+let lezajsk = L.marker([50.27051261458389, 22.408678702070706]).addTo(map);
+let siluva = L.marker([55.53061539541645, 23.21991247309754]).addTo(map);
+let laus = L.marker([44.52122093284419, 6.152105467908496]).addTo(map);
+let filipov = L.marker([50.81140894824067, 14.397622437454045]).addTo(map);
+let pontmain = L.marker([48.43959793253507, -1.0591001100132138]).addTo(map);
+let gietrzwald = L.marker([53.74804270191199, 20.23549536565065]).addTo(map);
+let knock = L.marker([53.7920679235046, -8.91752977714699]).addTo(map);
+let sprimont = L.marker([50.54089244870204, 5.73888739060881]).addTo(map);
 
-        zaragoza.bindPopup("<b>Aparição de Nossa Senhora do Pilar</b> <br> Nossa Senhora aparece a São Tiago, apóstolo de Cristo, em um pilar de mármore reluzente <br><a href='detalhes.html?id=1'>Clique aqui para obter mais detalhes</a>");
-        fatima.bindPopup("<b>Aparição de Nossa Senhora de Fátima</b> <br> Nossa Senhora aparece a três pastorinhos durante 5 meses, a partir de Maio, no dia 13 de cada mês <br><a href='detalhes.html?id=2'>Clique aqui para obter mais detalhes</a>");
-        paris.bindPopup("<b>Aparição de Nossa Senhora das Graças</b> <br> Nossa Senhora aparece a Santa Catarina Labouré três vezes em uma capela <br><a href='detalhes.html?id=3'>Clique aqui para obter mais detalhes</a>");
-        lourdes.bindPopup("<b>Aparição de Nossa Senhora de Lourdes</b> <br> Nossa Senhora aparece a Bernadette Soubirous na gruta Massabielle durante 18 aparições <br><a href='detalhes.html?id=4'>Clique aqui para obter mais detalhes</a>");
-        sallete.bindPopup("<b>Aparição de Nossa Senhora de La Salette</b> <br> Nossa Senhora aparece a duas crianças em uma montanha <br><a href='detalhes.html?id=5'>Clique aqui para obter mais detalhes</a>");
-        guadalupe.bindPopup("<b>Aparição de Nossa Senhora de Guadalupe</b> <br> Nossa Senhora aparece ao indígena Juan Diego <br><a href='detalhes.html?id=6'>Clique aqui para obter mais detalhes</a>");
-        roma.bindPopup("<b>Aparição de Nossa Senhora de Sion</b> <br> Nossa Senhora aparece a um judeu anti-católico, chamado Marie Alphonse Ratisbonne <br><a href='detalhes.html?id=7'>Clique aqui para obter mais detalhes</a>");
-        lezajsk.bindPopup("<b>Aparição de Nossa Senhora de Leżajsk</b> <br> Nossa Senhora aparece ao proprietário de um moinho <br><a href='detalhes.html?id=8'>Clique aqui para obter mais detalhes</a>");
-        siluva.bindPopup("<b>Aparição de Nossa Senhora de Šiluva</b> <br> Nossa Senhora aparece a jovens pastores <br><a href='detalhes.html?id=9'>Clique aqui para obter mais detalhes</a>");
-        laus.bindPopup("<b>Aparição de Nossa Senhora de Laus</b> <br> Nossa Senhora aparece a uma jovem pastora de 17 anos nos alpes franceses <br><a href='detalhes.html?id=10'>Clique aqui para obter mais detalhes</a>");
-        filipov.bindPopup("<b>Aparição de Nossa Senhora Auxiliadora dos Cristãos</b> <br> Nossa Senhora aparece a Magdalene Kade, uma mulher órfã de 31 anos <br><a href='detalhes.html?id=11'>Clique aqui para obter mais detalhes</a>");
-        pontmain.bindPopup("<b>Aparição de Nossa Senhora de Pontmain</b> <br> Nossa Senhora aparece a uma criança chamada Eugène de la Salle <br><a href='detalhes.html?id=12'>Clique aqui para obter mais detalhes</a>");
-        gietrzwald.bindPopup("<b>Aparição de Nossa Senhora de Gietrzwald</b> <br> Nossa Senhora aparece a duas meninas de 12 e 13 anos durante três meses <br><a href='detalhes.html?id=13'>Clique aqui para obter mais detalhes</a>");
-        knock.bindPopup("<b>Aparição de Nossa Senhora do Silêncio</b> <br> Nossa Senhora aparece a Mary McLoughlin numa época tempestuosa <br><a href='detalhes.html?id=14'>Clique aqui para obter mais detalhes</a>");
-        sprimont.bindPopup("<b>Aparição de Nossa Senhora dos Pobres</b> <br> Nossa Senhora aparece 8 vezes a uma menina de 12 anos <br><a href='detalhes.html?id=15'>Clique aqui para obter mais detalhes</a>");
 
-    </script>
+zaragoza.bindPopup(`
+    <div style="display: grid;place-items: center;">
+        <strong style="color: black; font-size: 1.2em;">Aparição de Nossa Senhora do Pilar</strong>
+        <img src="../images/nossa_Senhora_Pilar.png" alt="Nossa Senhora do Pilar" style="width: 80px; height: auto; margin: 5px 0;"/>
+        <a href='detalhes.html?id=1' class='btnSaibaMais'>Clique aqui para obter mais detalhes</a>
+    </div>
+`);
+
+fatima.bindPopup(`
+    <div style="display: grid;place-items: center;">
+        <strong style="color: black; font-size: 1.2em;">Aparição de Nossa Senhora de Fátima</strong>
+        <img src="../images/nossa_Senhora_fatima.png" alt="Nossa Senhora de Fátima" style="width: 80px; height: auto; margin: 5px 0;"/>
+        <a href='detalhes.html?id=2' class='btnSaibaMais'">Clique aqui para obter mais detalhes</a>
+    </div>
+`);
+
+paris.bindPopup(`
+    <div style="display: grid;place-items: center;">
+        <strong style="color: black; font-size: 1.2em;">Aparição de Nossa Senhora das Graças</strong>
+        <img src="../images/nossa_Senhora_das_gracas.jpg" alt="Nossa Senhora das Graças" style="width: 80px; height: auto; margin: 5px 0;"/>
+        <a href='detalhes.html?id=3' class='btnSaibaMais'">Clique aqui para obter mais detalhes</a>
+    </div>
+`);
+
+lourdes.bindPopup(`
+    <div style="display: grid;place-items: center;">
+        <strong style="color: black; font-size: 1.2em;">Aparição de Nossa Senhora de Lourdes</strong>
+        <img src="../images/nossa_Senhora_Lourdes.png" alt="Nossa Senhora de Lourdes" style="width: 80px; height: auto; margin: 5px 0;"/>
+        <a href='detalhes.html?id=4' class='btnSaibaMais'">Clique aqui para obter mais detalhes</a>
+    </div>
+`);
+
+sallete.bindPopup(`
+    <div style="display: grid;place-items: center;">
+        <strong style="color: black; font-size: 1.2em;">Aparição de Nossa Senhora de La Salette</strong>
+        <img src="../images/nossa_Senhora_LaSalette.jpg" alt="Nossa Senhora de La Salette" style="width: 80px; height: auto; margin: 5px 0;"/>
+        <a href='detalhes.html?id=5' class='btnSaibaMais'">Clique aqui para obter mais detalhes</a>
+    </div>
+`);
+
+guadalupe.bindPopup(`
+    <div style="display: grid;place-items: center;">
+        <strong style="color: black; font-size: 1.2em;">Aparição de Nossa Senhora de Guadalupe</strong>
+        <img src="../images/nossa_Senhora_de_Guadalupe.jpg" alt="Nossa Senhora de Guadalupe" style="width: 80px; height: auto; margin: 5px 0;"/>
+        <a href='detalhes.html?id=6' class='btnSaibaMais'">Clique aqui para obter mais detalhes</a>
+    </div>
+`);
+
+roma.bindPopup(`
+    <div style="display: grid;place-items: center;">
+        <strong style="color: black; font-size: 1.2em;">Aparição de Nossa Senhora de Sion</strong>
+        <img src="../images/nossa_Senhora_de_Sion.jpg" alt="Nossa Senhora de Sion" style="width: 80px; height: auto; margin: 5px 0;"/>
+        <a href='detalhes.html?id=7' class='btnSaibaMais'">Clique aqui para obter mais detalhes</a>
+    </div>
+`);
+
+lezajsk.bindPopup(`
+    <div style="display: grid;place-items: center;">
+        <strong style="color: black; font-size: 1.2em;">Aparição de Nossa Senhora de Leżajsk</strong>
+        <img src="../images/nossa_Senhora_da_Consolacao.jpg" alt="Nossa Senhora de Leżajsk" style="width: 80px; height: auto; margin: 5px 0;"/>
+        <a href='detalhes.html?id=8' class='btnSaibaMais'">Clique aqui para obter mais detalhes</a>
+    </div>
+`);
+
+siluva.bindPopup(`
+    <div style="display: grid;place-items: center;">
+        <strong style="color: black; font-size: 1.2em;">Aparição de Nossa Senhora de Šiluva</strong>
+        <img src="../images/nossa_Senhora_de_Siluva.jpg" alt="Nossa Senhora de Šiluva" style="width: 80px; height: auto; margin: 5px 0;"/>
+        <a href='detalhes.html?id=9' class='btnSaibaMais'">Clique aqui para obter mais detalhes</a>
+    </div>
+`);
+
+laus.bindPopup(`
+    <div style="display: grid;place-items: center;">
+        <strong style="color: black; font-size: 1.2em;">Aparição de Nossa Senhora de Laus</strong>
+        <img src="../images/nossa_Senhora_de_Laus.jpg" alt="Nossa Senhora de Laus" style="width: 80px; height: auto; margin: 5px 0;"/>
+        <a href='detalhes.html?id=10' class='btnSaibaMais'">Clique aqui para obter mais detalhes</a>
+    </div>
+`);
+
+filipov.bindPopup(`
+    <div style="display: grid;place-items: center;">
+        <strong style="color: black; font-size: 1.2em;">Aparição de Nossa Senhora de Filipov</strong>
+        <img src="../images/nossa_Senhora_de_Filipov.jpg" alt="Nossa Senhora de Filipov" style="width: 80px; height: auto; margin: 5px 0;"/>
+        <a href='detalhes.html?id=11' class='btnSaibaMais'">Clique aqui para obter mais detalhes</a>
+    </div>
+`);
+
+pontmain.bindPopup(`
+    <div style="display: grid;place-items: center;">
+        <strong style="color: black; font-size: 1.2em;">Aparição de Nossa Senhora de Pontmain</strong>
+        <img src="../images/nossa_Senhora_de_Pontmain.jpg" alt="Nossa Senhora de Pontmain" style="width: 80px; height: auto; margin: 5px 0;"/>
+        <a href='detalhes.html?id=12' class='btnSaibaMais'">Clique aqui para obter mais detalhes</a>
+    </div>
+`);
+
+gietrzwald.bindPopup(`
+    <div style="display: grid;place-items: center;">
+        <strong style="color: black; font-size: 1.2em;">Aparição de Nossa Senhora de Gietrzwałd</strong>
+        <img src="../images/nossa_Senhora_de_Gietrzwald.jpg" alt="Nossa Senhora de Gietrzwałd" style="width: 80px; height: auto; margin: 5px 0;"/>
+        <a href='detalhes.html?id=13' class='btnSaibaMais'">Clique aqui para obter mais detalhes</a>
+    </div>
+`);
+
+knock.bindPopup(`
+    <div style="display: grid;place-items: center;">
+        <strong style="color: black; font-size: 1.2em;">Aparição de Nossa Senhora de Knock</strong>
+        <img src="../images/nossa_Senhora_de_Knock.jpg" alt="Nossa Senhora de Knock" style="width: 80px; height: auto; margin: 5px 0;"/>
+        <a href='detalhes.html?id=14' class='btnSaibaMais'">Clique aqui para obter mais detalhes</a>
+    </div>
+`);
+
+sprimont.bindPopup(`
+    <div style="display: grid;place-items: center;">
+        <strong style="color: black; font-size: 1.2em;">Aparição de Nossa Senhora de Sprimont</strong>
+        <img src="../images/nossa_Senhora_de_Sprimont.jpg" alt="Nossa Senhora de Sprimont" style="width: 80px; height: auto; margin: 5px 0;"/>
+        <a href='detalhes.html?id=15' class='btnSaibaMais'">Clique aqui para obter mais detalhes</a>
+    </div>
+`);
+
+
+        </script>
+
     <script type="text/javascript" src="/scripts/traducao.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
