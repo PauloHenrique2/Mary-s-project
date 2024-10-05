@@ -1,0 +1,16 @@
+*
+{
+    box-sizing: border-box;
+}
+
+header
+{
+    background-color: rgb(152, 152, 152);
+    text-align: center;
+}
+
+ul li
+{
+    display: inline-block;
+    margin-right: 30px;
+}
