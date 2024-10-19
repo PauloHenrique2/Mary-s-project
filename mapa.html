@@ -67,6 +67,7 @@
         let kibeho = L.marker([-2.649596629509676, 29.55328894843863]).addTo(map);
         let beauraing = L.marker([50.10868955514343, 4.960959318047037]).addTo(map);
         let cimbres = L.marker([-8.362591112203372, -36.811647526437966]).addTo(map);
+        let aparecida = L.marker([-22.850523513151785, -45.23372607208304]).addTo(map);
 
         zaragoza.bindPopup(`
     <div style="display: grid;place-items: center;">
@@ -209,6 +210,14 @@
         <strong style="color: black; font-size: 1.2em;">Aparição de Nossa Senhora de Cimbres</strong>
         <img src="../images/nossa_Senhora_de_Cimbres.jpg" alt="Nossa Senhora de Cimbres" style="width: 80px; height: auto; margin: 5px 0;"/>
         <a href='detalhes.html?id=18' class='btnSaibaMais'">Clique aqui para obter mais detalhes</a>
+    </div>
+`);
+
+        aparecida.bindPopup(`
+    <div style="display: grid;place-items: center;">
+        <strong style="color: black; font-size: 1.2em;">Nossa Senhora Aparecida</strong>
+        <img src="../images/nossa_Senhora_Aparecida.jpg" alt="Nossa Senhora Aparecida" style="width: 80px; height: auto; margin: 5px 0;"/>
+        <a href='detalhes.html?id=19' class='btnSaibaMais'">Clique aqui para obter mais detalhes</a>
     </div>
 `);
    
